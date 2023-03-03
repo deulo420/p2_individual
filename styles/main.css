@@ -1,46 +1,114 @@
+
+body{
+	background-image: url(https://wallpaperaccess.com/full/2155719.jpg);
+}
+
 #title{
+	grid-column: auto;
+	height: 70px;
 	font-size: 26px;
 	line-height: 75px;
+	align-items: center;
+}
+
+#play{
+	grid-column: 1 / 2;
+  	grid-row: 2;
+}
+
+#play h2{
+	grid-column: 2;
+  	grid-row: 1;
+}
+
+#play img{
+	grid-column: 2;
+  	grid-row: 1;
+}
+#config{
+	grid-column: 1 / 2;
+  	grid-row: 3;
+}
+#info{
+	grid-column: 1 / 2;
+  	grid-row: 4;
+}
+.container{
+	display: grid;
+	justify-content: stretch;
+	grid-gap: 1px;	
+  	width: 99vw;
+  	height: 60vh;
 }
 
 .menu-object {
-	background-color: #80cbc4;
-	border: 1px solid #fff;
-	padding: 20px;
+	/*border: 1px solid red;*/
 	font-size: 30px;
 	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	width: 300px;
-	height: 75px;
+	max-height: 10%; 
+	max-width: 100%;
 	font-size: 16px;
-	margin-top: 15px;
-}
-
-p{
-	text-align: center;
-}
-
-#info{
-	height: 30px;
-}
-
-#info:hover:not(:active){
-	font-size: 18px;
+	align-self: center;
 }
 
 button.menu-object:active{
 	font-size: 18px;
 }
 
+.imgg{
+	width: 80px;
+	height: 80px;
+}
+
+p{
+	text-align: center;
+}
+
+/*HOVER */
+img.imgg:hover:active{
+/*    content: url("/path/here/to/image.png");*/
+
+	content: url(https://cdn-icons-png.flaticon.com/128/2331/2331852.png);
+}
+
+img.imgg:hover:not(:active){
+	content: url(https://cdn-icons-png.flaticon.com/128/3655/3655555.png);
+
+}
+
 button.menu-object:hover:not(:active){
 	font-size: 27px;
 }
 
-.container{
-	display: grid;
-  	grid-template-columns: auto auto;
-  	background-color: #c4c4c4;
- 	padding: 10px;
-  	border-radius: 10px;
+#info:hover:not(:active){
+	font-size: 18px;
 }
+
+
+/* Style 9
+   ----------------------------- */
+   .menu-object h1 {
+	text-align:center; font-size:50px; text-transform:uppercase; color:#222; letter-spacing:1px;
+	font-family:"Playfair Display", serif; font-weight:400;
+  }
+  .menu-object h1 span {
+	margin-top: 5px;
+	  font-size:15px; color:#444; word-spacing:1px; font-weight:normal; letter-spacing:2px;
+	  text-transform: uppercase; font-family:"Raleway", sans-serif; font-weight:500;
+  
+	  display: grid;
+	  grid-template-columns: 1fr max-content 1fr;
+	  grid-template-rows: 27px 0;
+	  grid-gap: 20px;
+	  align-items: center;
+  }
+  
+  .menu-object h1 span:after,.menu-object h1 span:before {
+	  content: " ";
+	  display: block;
+	  border-bottom: 1px solid #ccc;
+	  border-top: 1px solid #ccc;
+	  height: 5px;
+	background-color:#f8f8f8;
+  }
+  
