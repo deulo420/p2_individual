@@ -1,6 +1,6 @@
 function start_game(){
 	name = prompt("User name");
-	loadpage("./html/game.html");
+	loadpage("../game.html");
 }
 
 function exit (){
@@ -8,6 +8,7 @@ function exit (){
 		alert("Leaving " + name + "'s game");
 	}
 	name = "";
+	loadpage("../../index.html");
 }
 
 function options(){
